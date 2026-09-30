@@ -1,0 +1,330 @@
+{
+  "sources": [
+    {
+      "id": "src-amazon",
+      "provider": "Amazon India",
+      "source_url": "https://amazon.in/dp/example",
+      "freshness_status": "FRESH"
+    },
+    {
+      "id": "src-croma",
+      "provider": "Croma Retail",
+      "source_url": "https://croma.com/p/example",
+      "freshness_status": "FRESH"
+    },
+    {
+      "id": "src-verified-lab",
+      "provider": "TechBench Hardware Lab",
+      "source_url": "https://techbench.org/reviews/hardware",
+      "freshness_status": "FRESH"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-laptop-1",
+      "canonical_name": "ASUS ROG Zephyrus G14 (2024)",
+      "category": "laptop",
+      "brand": "ASUS",
+      "normalized_price": 88990.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&auto=format&fit=crop&q=80",
+      "description": "Compact powerhouse featuring AMD Ryzen 7 7735HS, NVIDIA RTX 4060 8GB GPU, 16 GB DDR5 RAM, and high-efficiency thermal architecture.",
+      "source_count": 3,
+      "attributes": [
+        {"attribute_name": "ram_gb", "normalized_value": "16", "raw_value": "16 GB DDR5 4800MHz", "unit": "GB", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "storage_gb", "normalized_value": "1024", "raw_value": "1 TB PCIe 4.0 NVMe SSD", "unit": "GB", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "cpu", "normalized_value": "AMD Ryzen 7 7735HS", "raw_value": "AMD Ryzen 7 7735HS (8 Cores, 16 Threads)", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "gpu", "normalized_value": "NVIDIA RTX 4060", "raw_value": "NVIDIA GeForce RTX 4060 8GB GDDR6", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "battery_life_hours", "normalized_value": "9.5", "raw_value": "9.5 Hours Battery", "unit": "Hours", "confidence": 0.95, "source_id": "src-verified-lab"},
+        {"attribute_name": "weight_kg", "normalized_value": "1.65", "raw_value": "1.65 kg", "unit": "kg", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "screen_size_inch", "normalized_value": "14.0", "raw_value": "14-inch QHD+ 165Hz", "unit": "inches", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "os", "normalized_value": "Windows 11 Home", "raw_value": "Windows 11 Home 64-bit", "unit": null, "confidence": 1.0, "source_id": "src-croma"},
+        {"attribute_name": "linux_compatibility", "normalized_value": "GOOD", "raw_value": "Tested on Ubuntu 24.04 with proprietary driver support", "unit": null, "confidence": 0.9, "source_id": "src-verified-lab"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-101",
+          "author": "Ananya Sharma",
+          "rating": 4.8,
+          "review_text": "Remarkable ML training performance with CUDA acceleration on the RTX 4060. The 16GB RAM handles PyTorch datasets smoothly. Battery lasts around 8-9 hours for coding sessions.",
+          "aspects": [
+            {"aspect": "performance", "sentiment": "POSITIVE", "confidence": 0.98},
+            {"aspect": "battery", "sentiment": "POSITIVE", "confidence": 0.92},
+            {"aspect": "build_quality", "sentiment": "POSITIVE", "confidence": 0.90}
+          ]
+        },
+        {
+          "id": "rev-102",
+          "author": "Rohan Deshmukh",
+          "rating": 4.5,
+          "review_text": "The keyboard travel is crisp and thermals remain stable under high compilation loads. Fan noise is noticeable on Turbo mode, but silent in eco-mode.",
+          "aspects": [
+            {"aspect": "thermals", "sentiment": "POSITIVE", "confidence": 0.85},
+            {"aspect": "build_quality", "sentiment": "POSITIVE", "confidence": 0.95}
+          ]
+        },
+        {
+          "id": "rev-103",
+          "author": "Priya Nair",
+          "rating": 4.7,
+          "review_text": "Installed Ubuntu smoothly with no WiFi or GPU issues. Unmatched balance between portability and computational power under 90k.",
+          "aspects": [
+            {"aspect": "value", "sentiment": "POSITIVE", "confidence": 0.96},
+            {"aspect": "performance", "sentiment": "POSITIVE", "confidence": 0.95}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-laptop-2",
+      "canonical_name": "Lenovo ThinkPad T14 Gen 4",
+      "category": "laptop",
+      "brand": "Lenovo",
+      "normalized_price": 84990.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600&auto=format&fit=crop&q=80",
+      "description": "Enterprise-grade workhorse with AMD Ryzen 5 PRO 7540U, 16 GB LPDDR5X RAM, exceptional keyboard ergonomics and certified Linux support.",
+      "source_count": 2,
+      "attributes": [
+        {"attribute_name": "ram_gb", "normalized_value": "16", "raw_value": "16 GB Soldered LPDDR5X", "unit": "GB", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "storage_gb", "normalized_value": "512", "raw_value": "512 GB SSD M.2 2280", "unit": "GB", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "cpu", "normalized_value": "AMD Ryzen 5 PRO 7540U", "raw_value": "Ryzen 5 PRO 7540U 6-Core", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "gpu", "normalized_value": "Integrated AMD Radeon 740M", "raw_value": "Integrated Radeon Graphics", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "battery_life_hours", "normalized_value": "11.0", "raw_value": "11 Hours Certified", "unit": "Hours", "confidence": 0.98, "source_id": "src-verified-lab"},
+        {"attribute_name": "weight_kg", "normalized_value": "1.38", "raw_value": "1.38 kg", "unit": "kg", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "screen_size_inch", "normalized_value": "14.0", "raw_value": "14-inch WUXGA IPS Anti-glare", "unit": "inches", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "os", "normalized_value": "Windows 11 Pro", "raw_value": "Windows 11 Pro", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "linux_compatibility", "normalized_value": "EXCELLENT", "raw_value": "Official Red Hat / Ubuntu Certified", "unit": null, "confidence": 1.0, "source_id": "src-verified-lab"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-201",
+          "author": "Karthik Sundaram",
+          "rating": 4.6,
+          "review_text": "Legendary ThinkPad keyboard and rugged construction. Runs Fedora seamlessly without a single hitch. Battery comfortably lasts all day.",
+          "aspects": [
+            {"aspect": "build_quality", "sentiment": "POSITIVE", "confidence": 0.99},
+            {"aspect": "battery", "sentiment": "POSITIVE", "confidence": 0.95}
+          ]
+        },
+        {
+          "id": "rev-202",
+          "author": "Deepak Verma",
+          "rating": 4.0,
+          "review_text": "Solid processor for standard programming and backend containers, but lacks discrete GPU for deep learning model training.",
+          "aspects": [
+            {"aspect": "performance", "sentiment": "NEUTRAL", "confidence": 0.88},
+            {"aspect": "value", "sentiment": "POSITIVE", "confidence": 0.85}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-laptop-3",
+      "canonical_name": "Apple MacBook Air 13 M2",
+      "category": "laptop",
+      "brand": "Apple",
+      "normalized_price": 94900.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=600&auto=format&fit=crop&q=80",
+      "description": "Ultra-slim notebook powered by Apple Silicon M2 with Unified Memory, Liquid Retina display, and industry-leading power efficiency.",
+      "source_count": 3,
+      "attributes": [
+        {"attribute_name": "ram_gb", "normalized_value": "8", "raw_value": "8 GB Unified Memory", "unit": "GB", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "storage_gb", "normalized_value": "256", "raw_value": "256 GB High Speed SSD", "unit": "GB", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "cpu", "normalized_value": "Apple M2 8-Core", "raw_value": "Apple M2 8-Core CPU / 8-Core GPU", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "gpu", "normalized_value": "Apple M2 8-Core GPU", "raw_value": "Integrated 8-core GPU", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "battery_life_hours", "normalized_value": "15.0", "raw_value": "15 Hours Wireless Web", "unit": "Hours", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "weight_kg", "normalized_value": "1.24", "raw_value": "1.24 kg", "unit": "kg", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "screen_size_inch", "normalized_value": "13.6", "raw_value": "13.6-inch Liquid Retina", "unit": "inches", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "os", "normalized_value": "macOS Sonoma", "raw_value": "macOS", "unit": null, "confidence": 1.0, "source_id": "src-croma"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-301",
+          "author": "Vikram Patel",
+          "rating": 4.9,
+          "review_text": "Battery life is unmatched; easily reaches 14+ hours. Screen and audio quality are breathtaking.",
+          "aspects": [
+            {"aspect": "battery", "sentiment": "POSITIVE", "confidence": 0.99},
+            {"aspect": "display", "sentiment": "POSITIVE", "confidence": 0.98}
+          ]
+        },
+        {
+          "id": "rev-302",
+          "author": "Sneha Ghosh",
+          "rating": 3.8,
+          "review_text": "8GB unified RAM is limiting for large Docker containers or heavy PyTorch models. Slightly exceeds 90k budget for the base spec.",
+          "aspects": [
+            {"aspect": "performance", "sentiment": "NEGATIVE", "confidence": 0.85},
+            {"aspect": "value", "sentiment": "NEUTRAL", "confidence": 0.80}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-laptop-4",
+      "canonical_name": "Acer Swift Go 14 OLED",
+      "category": "laptop",
+      "brand": "Acer",
+      "normalized_price": 69990.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=600&auto=format&fit=crop&q=80",
+      "description": "Value-packed thin & light laptop with Intel Core Ultra 5 125H AI CPU, 16 GB LPDDR5X RAM, and brilliant 2.8K 90Hz OLED display.",
+      "source_count": 2,
+      "attributes": [
+        {"attribute_name": "ram_gb", "normalized_value": "16", "raw_value": "16 GB LPDDR5X 6400MHz", "unit": "GB", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "storage_gb", "normalized_value": "512", "raw_value": "512 GB PCIe Gen4 SSD", "unit": "GB", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "cpu", "normalized_value": "Intel Core Ultra 5 125H", "raw_value": "Intel Core Ultra 5 125H (14 Cores, NPU)", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "gpu", "normalized_value": "Intel Arc Graphics", "raw_value": "Intel Arc Graphics 7-Cores", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "battery_life_hours", "normalized_value": "8.0", "raw_value": "8 Hours", "unit": "Hours", "confidence": 0.88, "source_id": "src-verified-lab"},
+        {"attribute_name": "weight_kg", "normalized_value": "1.32", "raw_value": "1.32 kg", "unit": "kg", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "screen_size_inch", "normalized_value": "14.0", "raw_value": "14-inch 2.8K 90Hz OLED", "unit": "inches", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "os", "normalized_value": "Windows 11 Home", "raw_value": "Windows 11 Home", "unit": null, "confidence": 1.0, "source_id": "src-amazon"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-401",
+          "author": "Rahul Gupta",
+          "rating": 4.5,
+          "review_text": "The OLED display is jaw-dropping and Intel NPU helps with on-device local AI inference. Outstanding value for 70k.",
+          "aspects": [
+            {"aspect": "display", "sentiment": "POSITIVE", "confidence": 0.98},
+            {"aspect": "value", "sentiment": "POSITIVE", "confidence": 0.95},
+            {"aspect": "performance", "sentiment": "POSITIVE", "confidence": 0.90}
+          ]
+        },
+        {
+          "id": "rev-402",
+          "author": "Manoj Kumar",
+          "rating": 3.9,
+          "review_text": "Battery life drains faster with OLED brightness at maximum. Speaker volume is slightly weak.",
+          "aspects": [
+            {"aspect": "battery", "sentiment": "NEGATIVE", "confidence": 0.85},
+            {"aspect": "build_quality", "sentiment": "NEUTRAL", "confidence": 0.80}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-laptop-5",
+      "canonical_name": "Dell XPS 13 Plus (9320)",
+      "category": "laptop",
+      "brand": "Dell",
+      "normalized_price": 128990.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&auto=format&fit=crop&q=80",
+      "description": "Futuristic premium ultrabook with capacitive touch row, seamless glass haptic touchpad, and 13th Gen Intel Core i7.",
+      "source_count": 2,
+      "attributes": [
+        {"attribute_name": "ram_gb", "normalized_value": "32", "raw_value": "32 GB LPDDR5 6000MHz", "unit": "GB", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "storage_gb", "normalized_value": "1024", "raw_value": "1 TB PCIe 4 SSD", "unit": "GB", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "cpu", "normalized_value": "Intel Core i7-1360P", "raw_value": "Intel Core i7-1360P (12 Cores)", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "battery_life_hours", "normalized_value": "7.0", "raw_value": "7 Hours", "unit": "Hours", "confidence": 0.85, "source_id": "src-verified-lab"},
+        {"attribute_name": "weight_kg", "normalized_value": "1.26", "raw_value": "1.26 kg", "unit": "kg", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "screen_size_inch", "normalized_value": "13.4", "raw_value": "13.4-inch FHD+ InfinityEdge", "unit": "inches", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "os", "normalized_value": "Windows 11 Pro", "raw_value": "Windows 11 Pro", "unit": null, "confidence": 1.0, "source_id": "src-amazon"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-501",
+          "author": "Arjun Singhal",
+          "rating": 4.1,
+          "review_text": "Gorgeous futuristic industrial design and 32GB RAM makes multitasking buttery smooth. Price is quite steep though.",
+          "aspects": [
+            {"aspect": "build_quality", "sentiment": "POSITIVE", "confidence": 0.98},
+            {"aspect": "value", "sentiment": "NEGATIVE", "confidence": 0.88}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-phone-1",
+      "canonical_name": "Google Pixel 8 Pro",
+      "category": "smartphone",
+      "brand": "Google",
+      "normalized_price": 79999.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&auto=format&fit=crop&q=80",
+      "description": "Google's flagship phone with Google Tensor G3, advanced computational photography, and 7 years of OS updates.",
+      "source_count": 3,
+      "attributes": [
+        {"attribute_name": "ram_gb", "normalized_value": "12", "raw_value": "12 GB LPDDR5X", "unit": "GB", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "storage_gb", "normalized_value": "128", "raw_value": "128 GB UFS 3.1", "unit": "GB", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "screen_size_inch", "normalized_value": "6.7", "raw_value": "6.7-inch Super Actua OLED 120Hz", "unit": "inches", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "battery_mah", "normalized_value": "5050", "raw_value": "5050 mAh Battery", "unit": "mAh", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "camera_mp", "normalized_value": "50", "raw_value": "50MP Main + 48MP Tele + 48MP Ultrawide", "unit": "MP", "confidence": 1.0, "source_id": "src-amazon"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-601",
+          "author": "Tanmay Bhatt",
+          "rating": 4.8,
+          "review_text": "Camera quality in low-light is unparalleled. Software experience is cleanest on Android.",
+          "aspects": [
+            {"aspect": "camera", "sentiment": "POSITIVE", "confidence": 0.99},
+            {"aspect": "performance", "sentiment": "POSITIVE", "confidence": 0.92}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-phone-2",
+      "canonical_name": "Samsung Galaxy S24 Ultra",
+      "category": "smartphone",
+      "brand": "Samsung",
+      "normalized_price": 119999.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&auto=format&fit=crop&q=80",
+      "description": "Flagship with Titanium frame, Qualcomm Snapdragon 8 Gen 3 for Galaxy, S-Pen, and Galaxy AI.",
+      "source_count": 3,
+      "attributes": [
+        {"attribute_name": "ram_gb", "normalized_value": "12", "raw_value": "12 GB LPDDR5X", "unit": "GB", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "storage_gb", "normalized_value": "256", "raw_value": "256 GB UFS 4.0", "unit": "GB", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "screen_size_inch", "normalized_value": "6.8", "raw_value": "6.8-inch Dynamic AMOLED 2X 120Hz Anti-reflective", "unit": "inches", "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "battery_mah", "normalized_value": "5000", "raw_value": "5000 mAh Battery", "unit": "mAh", "confidence": 1.0, "source_id": "src-verified-lab"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-701",
+          "author": "Aditya Rao",
+          "rating": 4.7,
+          "review_text": "The anti-reflective screen coating is a game changer outdoors. S-Pen and zoom camera are superb.",
+          "aspects": [
+            {"aspect": "display", "sentiment": "POSITIVE", "confidence": 0.99},
+            {"aspect": "performance", "sentiment": "POSITIVE", "confidence": 0.97}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-monitor-1",
+      "canonical_name": "Dell UltraSharp U2723QE 27-inch 4K",
+      "category": "monitor",
+      "brand": "Dell",
+      "normalized_price": 54990.0,
+      "currency": "INR",
+      "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&auto=format&fit=crop&q=80",
+      "description": "Professional 27-inch 4K UHD USB-C Hub Monitor with IPS Black technology (2000:1 contrast) and 98% DCI-P3 color gamut.",
+      "source_count": 2,
+      "attributes": [
+        {"attribute_name": "screen_size_inch", "normalized_value": "27.0", "raw_value": "27 inch 4K IPS Black", "unit": "inches", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "resolution", "normalized_value": "3840x2160", "raw_value": "4K UHD (3840 x 2160)", "unit": null, "confidence": 1.0, "source_id": "src-amazon"},
+        {"attribute_name": "usb_c_pd_watt", "normalized_value": "90", "raw_value": "90W USB-C Power Delivery Hub", "unit": "Watts", "confidence": 1.0, "source_id": "src-verified-lab"},
+        {"attribute_name": "color_gamut", "normalized_value": "98% DCI-P3", "raw_value": "98% DCI-P3, 100% sRGB", "unit": null, "confidence": 1.0, "source_id": "src-verified-lab"}
+      ],
+      "reviews": [
+        {
+          "id": "rev-801",
+          "author": "Siddharth Menon",
+          "rating": 4.9,
+          "review_text": "IPS Black contrast gives deep blacks approaching OLED without burn-in worries. One-cable 90W USB-C connection charges laptop and routes Ethernet perfectly.",
+          "aspects": [
+            {"aspect": "display", "sentiment": "POSITIVE", "confidence": 0.99},
+            {"aspect": "value", "sentiment": "POSITIVE", "confidence": 0.94}
+          ]
+        }
+      ]
+    }
+  ]
+}
